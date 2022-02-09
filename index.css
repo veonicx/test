@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 4fr 3fr 2fr;
+    grid-template-areas: "main main header" "main main candy" "text more candy" "footer footer candy";
+    height: 100vh;
+    margin: 2em;
+}
+
+section.main {
+    grid-area: main;
+    background: #fffadf;
+}
+
+section.header {
+    grid-area: header;
+    background: #dfb5b5;
+}
+
+section.text {
+    grid-area: text;
+    background: #c4b35a;
+}
+
+section.more {
+    grid-area: more;
+    background: #333333;
+}
+
+section.footer {
+    grid-area: footer;
+    background: #bfe797;
+}
+
+section.candy {
+    grid-area: candy;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/candy.jpg') no-repeat;
+    background-size: cover;
+}
